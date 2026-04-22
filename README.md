@@ -16,14 +16,10 @@ pip install pandas numpy matplotlib scikit-learn jupyter
 # 3. Generate data (or replace with real CSVs in data/)
 python generate_data.py
 
-# 4. Run full analysis
-python analysis.py
 
-# 5. OR open the notebook
+# 4. OR open the notebook
 jupyter notebook analysis.ipynb
 ```
-
-**Outputs** land in `charts/` (6 PNG files).
 
 ---
 
@@ -35,15 +31,7 @@ primetrade_project/
 │   ├── sentiment.csv          ← Fear/Greed index (date, score, classification)
 │   ├── trades.csv             ← Hyperliquid trades (455k rows, 11 cols)
 │   └── daily_metrics.csv      ← Computed daily per-trader metrics
-├── charts/
-│   ├── chart1_summary_dashboard.png
-│   ├── chart2_pnl_distribution.png
-│   ├── chart3_leverage_segments.png
-│   ├── chart4_archetype_heatmap.png
-│   ├── chart5_timeseries.png
-│   └── chart6_winner_segments.png
 ├── generate_data.py           ← Synthetic data generator (mirrors schema)
-├── analysis.py                ← Full analysis script
 ├── analysis.ipynb             ← Jupyter notebook version
 └── README.md
 ```
@@ -125,4 +113,3 @@ A simple logistic regression using `[avg_leverage, n_trades, long_ratio, sentime
 
 ---
 
-*Note: Data generated synthetically to match the described schema (Google Drive files were access-restricted). The structural patterns, trader archetypes, and sentiment correlations are modeled on typical Hyperliquid trading dynamics for demonstration purposes.*
